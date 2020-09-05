@@ -1,0 +1,147 @@
+@import url(html5reset-1.6.1.css);
+
+body{
+  background-color: rgb(235, 227, 227);
+}
+
+#whole{
+  width:60rem;
+  margin: 2rem auto;
+}
+
+.about{
+  margin: 1.5rem;
+}
+
+header h1{
+  font-size: 2rem;
+  background-color: rgb(241, 241, 187);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.about{
+  font-size: 1.1rem;
+}
+
+.about h1{
+  font-size: 1.5rem;
+  float: left;
+}
+
+.tag{
+  color: antiquewhite;
+  font-style: italic;
+  font-size: 1rem;
+  background-color: rgb(29, 115, 155);
+  padding: 0 0.5rem;
+  margin-left: 1rem;
+}
+
+.fadeslider{
+  clear: both;
+  margin: 1.8rem 0.5rem 0;
+  position: relative;
+  float: left;
+}
+
+@keyframes slideshow{
+  0%{
+    opacity: 0;
+  }
+  12%{
+    opacity: 1;
+  }
+  48%{
+    opacity: 1
+  }
+  59%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.fadeslider img {
+  position: absolute;
+  opacity: 0;
+  animation :slideshow 8s linear infinite;
+}
+
+.fadeslider img:last-child{
+  animation-delay: 4s;
+}
+
+.description{
+  margin-top: 1rem;
+  margin-right: 0;
+  margin-left: 27rem;
+  padding: 0.7rem 0;
+}
+
+.description h2{
+  margin-bottom: 0.5rem;
+}
+
+.description p{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-left: 1rem;
+}
+
+.tracklist{
+  clear: both;
+  margin: 1.5rem;
+}
+
+.tracklist{
+  font-size: 1.5rem;
+  background-color: rgb(241, 241, 187);
+  padding: 1rem;
+  padding-left: 4rem;
+  width: 55%;
+  float: left;
+}
+
+.tracklist h1{
+  color: white;
+  background-color: rgb(49, 39, 39);
+  padding: 0.3rem;
+  margin-bottom: 0.9rem;
+  width: 20%;
+  text-align: center;
+}
+
+ol{
+  list-style-type: unset;
+  list-style-position: inside;
+  padding-left: 3.5rem;
+}
+
+ol li{
+  font-size: 1.1rem;
+  margin-right: 5rem;
+  display: inline-table;
+}
+
+ol li a{
+  color: rgb(70, 67, 67);
+}
+
+.buynow{
+  text-align: center;
+}
+
+.buynow span{
+  font-style: italic;
+  font-size: 5rem;
+  padding: 0;
+}
+
+footer{
+  margin-top: 1.5rem;
+  text-align: center;
+  clear: both;
+}
